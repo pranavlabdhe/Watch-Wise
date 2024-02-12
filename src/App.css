@@ -71,15 +71,31 @@ img {
   font-weight: bold;
   letter-spacing: 10.5px;
   padding: 24px;
+  position: relative;
+}
+.logout {
+  position: absolute;
+  right: 54px;
+  top: 40px;
+  letter-spacing: 2.2px;
+  display: flex;
+  cursor: pointer;
+}
+.logout_icon {
+  position: relative;
+  top: 2px;
+}
+.profile_img {
+  position: relative;
+  top: -9px;
 }
 
-
-.logo img {
+/* .logo img {
 	width: 170px;
 	position: absolute;
 	top: 20px;
 	left: 40px;
-}
+} */
 
 .showcase-content {
 	position: relative;
