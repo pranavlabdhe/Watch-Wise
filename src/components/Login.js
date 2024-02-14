@@ -12,6 +12,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { addUser } from "../utils/userSlice";
 import { useDispatch } from "react-redux";
+import { userAvatar } from "../utils/constants";
 const Login = () => {
   const [isSign, setSign] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
@@ -40,7 +41,7 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         console.log("Signed In", user);
-        navigate("/browse");
+        // navigate("/browse");
         // ...
       })
       .catch((error) => {
@@ -71,12 +72,12 @@ const Login = () => {
         console.log(user);
         updateProfile(auth.currentUser,{
           displayName: name.current.value,
-          photoURL:'https://cdn-icons-png.flaticon.com/512/9131/9131529.png'
+          photoURL:userAvatar
         }).then(()=>{
           const { uid:uid , email:email, displayName:displayName, photoURL:photoURL } = auth.currentUser
           dispatch(addUser({ uid:uid , email:email, displayName:displayName, photoURL:photoURL  }))
           console.log(user);
-          navigate("/browse");
+          // navigate("/browse");
         }).catch((error)=>{
           const errorCode = error.code;
           const errorMessage = error.message;
@@ -100,6 +101,7 @@ const Login = () => {
 
             <div className="d-flex justify-content-center">
               <div className="showcase-content col-12 col-sm-6 col-md-6 col-lg-6">
+              <p className="text-center">Find your perfect movie match now.</p>
                 <div className="formm">
                   <form>
                     <h1 className="text-center text-white text-3xl mt-3">
@@ -155,6 +157,7 @@ const Login = () => {
           <Header />
           <div className="d-flex justify-content-center">
             <div className="showcase-content col-12 col-sm-6 col-md-6 col-lg-6">
+            <p className="text-center">Find your perfect movie match now.</p>
               <div className="formm">
                 <form>
                   <h1 className="text-center text-white text-3xl mt-3">

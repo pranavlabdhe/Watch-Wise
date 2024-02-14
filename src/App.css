@@ -76,7 +76,7 @@ img {
 .logout {
   position: absolute;
   right: 54px;
-  top: 40px;
+  top: 26px;
   letter-spacing: 2.2px;
   display: flex;
   cursor: pointer;
@@ -87,7 +87,8 @@ img {
 }
 .profile_img {
   position: relative;
-  top: -9px;
+  top: -7px;
+  margin-right: 8px;
 }
 
 /* .logo img {
@@ -311,4 +312,106 @@ footer {
   font-size: 12px;
   margin-top: 4px;
   margin-bottom: 0px;
+}
+.video_title_main {
+  /* margin: 16px; */
+  padding: 24px;
+  width: 100%;
+  /* height: 100vh; */
+}
+.profile_img {
+  width: 40px;
+  height: 40px;
+}
+.play_button {
+  border-radius: 12px;
+  align-items: center;
+  /* border: 2px solid white; */
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.play_button img {
+  /* width: 36px; */
+}
+.video_button_div {
+  gap: 18px;
+}
+.play_button_2 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.play_button_2 {
+    /* border: 2px solid white; */
+    border-radius: 12px;
+    cursor: pointer;
+    background: #575b62;
+    align-items: center;
+    width: 100%;
+    opacity: 90%;
+}
+.play_button_2:hover {
+  background-color: lightslategrey;
+}
+.play_button {
+  background-color: white;
+  color: black;
+}
+.play_button:hover {
+  background-color: #343434;
+  color: white;
+}
+.movie_desc {
+  font-size: 24px;
+}
+@media screen and (max-width:600px) {
+  .logout {
+    position: absolute;
+    right: 16px;
+    top: 31px;
+    letter-spacing: 2.2px;
+    display: flex;
+    cursor: pointer;
+}
+.profile_img {
+    position: relative;
+    top: -2px;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 100000;
+    height: 80px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10.5px;
+    padding: 24px;
+    position: relative;
+}
+.video_button_div {
+  gap: 18px;
+  /* flex-direction: column; */
+}
+.movie_title {
+  font-size: 30px;
+}
+.movie_desc {
+  font-size: 8px;
+  padding: 0px;
+  line-height: 2;
+}
+.info_font {
+  font-size: 9px;
+}
+.play_button {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 9px;
+}
+.play_button img {
+  width: 9px;
+}
 }
