@@ -1,6 +1,6 @@
 # Watch-Wise
 
-Watch-Wise is a movie recommendation application that suggests personalized movie options based on your preferences. Powered by React, Redux, Firebase, and ChatGPT APIs, Watch-Wise offers a seamless user experience, allowing you to discover new movies tailored to your taste. Simply chat with our AI assistant to receive curated movie suggestions and enhance your viewing experience. Discover your next favorite movie with Watch-Wise!
+Watch-Wise is a movie recommendation application that suggests personalized movie options based on your preferences. Powered by React, Redux, Firebase, and ChatGPT APIs, Watch-Wise offers a seamless user experience, allowing you to discover new movies tailored to your taste. Simply chat with AI assistant to receive curated movie suggestions and enhance your viewing experience. Discover your next favorite movie with Watch-Wise!
 
 ## Features
 
