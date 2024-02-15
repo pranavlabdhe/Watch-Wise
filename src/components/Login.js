@@ -101,7 +101,7 @@ const Login = () => {
 
             <div className="d-flex justify-content-center">
               <div className="showcase-content col-12 col-sm-6 col-md-6 col-lg-6">
-              <p class="text-center">Your personal movie recommeder!!</p>
+              <p class="text-center">Your personal AI movie recommender!!</p>
               <p className="text-center">Find your perfect movie match now.</p>
                 <div className="formm">
                   <form>
@@ -158,7 +158,7 @@ const Login = () => {
           <Header />
           <div className="d-flex justify-content-center">
             <div className="showcase-content col-12 col-sm-6 col-md-6 col-lg-6">
-            <p class="text-center">Your personal movie recommeder!!</p>
+            <p class="text-center">Your personal AI movie recommender!!</p>
             <p className="text-center">Find your perfect movie match now.</p>
               <div className="formm">
                 <form>
