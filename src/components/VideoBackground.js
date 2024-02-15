@@ -8,21 +8,21 @@ const VideoBackground = ({ backdrop_path,movieId }) => {
 
     useMovieTrailer(movieId)
     const fullTrailerVideoUrl = `https://www.youtube.com/embed/${trailerVideoKey}?autoplay=1&mute=1`;
-    console.log(fullTrailerVideoUrl); 
+    // console.log(fullTrailerVideoUrl); 
     
-    console.log(trailerVideoKey);
+    // console.log(trailerVideoKey);
     return (
-        <div>
+        <div >
             <iframe
                 className='iframe_div  w-screen aspect-video'
                 src={fullTrailerVideoUrl}
                 title="YouTube video player"
                 frameBorder="0"
-                allow="autoplay; encrypted-media"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
             ></iframe>
-            
-            <img src={baseImageUrl + backdrop_path} />
+ 
+            {/* <img src={baseImageUrl + backdrop_path} /> */}
         </div>
     );
 };
