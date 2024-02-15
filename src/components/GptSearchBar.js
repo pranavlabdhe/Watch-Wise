@@ -8,7 +8,7 @@ import { addGptMovieResult } from '../utils/gptSlice'
 const GptSearchBar = () => {
    const dispatch = useDispatch()
    const langKey = useSelector((store)=>store.config.lang) 
-   console.log(langConst[langKey]?.search); // Accessing the 'search' key based on langKey value
+  //  console.log(langConst[langKey]?.search); // Accessing the 'search' key based on langKey value
    const searchTxt = useRef(null)
 
     //Search movie    
